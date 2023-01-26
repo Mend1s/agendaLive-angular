@@ -7,17 +7,28 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //Material
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+
+//Component
+import { HomeComponent } from './views/home/home.component';
+import { LiveListComponent } from './views/home/live-list/live-list.component';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    LiveListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
